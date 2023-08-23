@@ -1,0 +1,232 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Adicione posição relativa para o posicionamento absoluto */
+}
+
+.store-title {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.header-links {
+    position: absolute; /* Posição absoluta para fixar no lado direito */
+    right: 20px; /* Distância da direita */
+    top: 50%; /* Centralizar verticalmente */
+    transform: translateY(-50%); /* Ajustar para centralizar verticalmente */
+}
+
+/* Sobre a Loja */
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px; /* Ajuste o padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    padding-right: 30px;
+    margin-bottom: 0; /* Remova a margem inferior */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 30px;
+    text-align: left;
+}
+
+/* Seleção de Produtos */
+/* Estilos gerais */
+/* ... */
+
+/* Seleção de Produtos */
+/* Estilos gerais */
+/* ... */
+
+/* Seleção de Produtos */
+.products {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: flex-start;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 120px; /* Reduzi o tamanho da imagem para um estilo mais agradável */
+    max-width: 100%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.product-content {
+    flex: 1;
+}
+
+.product h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px; /* Tamanho de fonte ajustado */
+    color: #333;
+}
+
+.product p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px; /* Tamanho de fonte ajustado */
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background-color: #222;
+}
+
+/* ... */
+
+
+/* ... */
+
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .about {
+        padding: 50px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 640px) {
+    header {
+        flex-direction: column; /* Disposição em coluna para dispositivos móveis */
+    }
+
+    .store-title {
+        text-align: left; /* Alinhar o título à esquerda */
+        margin: 10px 0 20px; /* Adicionar espaçamento inferior */
+    }
+
+    .header-links {
+        position: static; /* Resetar a posição absoluta */
+        text-align: left; /* Alinhar os links à esquerda */
+        padding: 0; /* Remover o espaçamento anterior */
+    }
+
+    nav ul {
+        flex-direction: row; /* Voltar à disposição em linha */
+        padding: 0; /* Remover o espaçamento anterior */
+    }
+
+    nav li {
+        margin: 0 15px 0 0; /* Adicionar espaçamento entre os itens */
+    }
+
+    /* Sobre a Loja */
+    .about {
+        /* ... */
+        padding: 20px; /* Ajuste o padding para dispositivos móveis */
+    }
+
+    /* Seleção de Produtos */
+    .products {
+        /* ... */
+        padding: 15px; /* Ajuste o padding para dispositivos móveis */
+    }
+
+    .product-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 200px; /* Adicionar para manter a proporção da imagem */
+        max-height: 400px; /* Definir a altura máxima da imagem */
+        margin-bottom: 20px;
+    }
+}
